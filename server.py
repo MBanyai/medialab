@@ -12,7 +12,6 @@ def index():
 
 @app.route("/upload", methods=['POST'])
 def upload():
-    print("A POST request has come!")
 
     temp=bytearray(base64.b64decode(request.data))
     file=open("static/temp.jpg",'wb')
